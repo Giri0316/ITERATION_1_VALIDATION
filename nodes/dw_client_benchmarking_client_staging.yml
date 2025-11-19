@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 8b0c8e23-2856-4b95-a228-6874e50d6f46
-name: dw_client_benchmarking_client_staging
+name: DW_CLIENT_BENCHMARKING_CLIENT_STAGING
 operation:
   database: Alliant_DW_Stage
   deployEnabled: true
@@ -19,7 +19,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_source_system_id
+        name: DW_SOURCE_SYSTEM_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -38,7 +38,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_client_id
+        name: DW_CLIENT_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -57,7 +57,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_client_master_id
+        name: DW_CLIENT_MASTER_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -76,7 +76,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_policy_id
+        name: DW_POLICY_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -95,7 +95,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_structure_id
+        name: DW_STRUCTURE_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -114,7 +114,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_company_id_issuing
+        name: DW_COMPANY_ID_ISSUING
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -133,7 +133,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_company_id_billing
+        name: DW_COMPANY_ID_BILLING
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -152,7 +152,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_date_id_effective_date
+        name: DW_DATE_ID_EFFECTIVE_DATE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -171,7 +171,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: dw_date_id_expiration_date
+        name: DW_DATE_ID_EXPIRATION_DATE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -190,7 +190,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: policy_number
+        name: POLICY_NUMBER
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -209,7 +209,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: policy_name
+        name: POLICY_NAME
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -228,7 +228,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: policy_type
+        name: POLICY_TYPE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -247,7 +247,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: policy_type_code
+        name: POLICY_TYPE_CODE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -266,7 +266,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: line_status_code
+        name: LINE_STATUS_CODE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -285,7 +285,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: line_type
+        name: LINE_TYPE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -304,7 +304,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: line_type_code
+        name: LINE_TYPE_CODE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -323,7 +323,7 @@ operation:
         dataType: DATE
         defaultValue: ""
         description: ""
-        name: policy_effective_date
+        name: POLICY_EFFECTIVE_DATE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -342,7 +342,7 @@ operation:
         dataType: DATE
         defaultValue: ""
         description: ""
-        name: policy_expiration_date
+        name: POLICY_EXPIRATION_DATE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -361,7 +361,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: billed_commission
+        name: BILLED_COMMISSION
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -380,7 +380,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: billed_premium
+        name: BILLED_PREMIUM
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -399,7 +399,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: employee_count
+        name: EMPLOYEE_COUNT
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -418,7 +418,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: employee_count_california
+        name: EMPLOYEE_COUNT_CALIFORNIA
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -437,7 +437,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: employee_count_united_states
+        name: EMPLOYEE_COUNT_UNITED_STATES
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -456,7 +456,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: employee_count_global
+        name: EMPLOYEE_COUNT_GLOBAL
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -475,7 +475,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: employee_domestic_us_flag
+        name: EMPLOYEE_DOMESTIC_US_FLAG
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -494,7 +494,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: employee_global_flag
+        name: EMPLOYEE_GLOBAL_FLAG
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -513,7 +513,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: total_revenue
+        name: TOTAL_REVENUE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -532,7 +532,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: total_client_assets
+        name: TOTAL_CLIENT_ASSETS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -551,7 +551,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: private_or_public
+        name: PRIVATE_OR_PUBLIC
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -570,7 +570,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: market_cap
+        name: MARKET_CAP
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -589,7 +589,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: public_float
+        name: PUBLIC_FLOAT
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -608,7 +608,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: ipo
+        name: IPO
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -627,7 +627,7 @@ operation:
         dataType: DATE
         defaultValue: ""
         description: ""
-        name: effective_date_financial_package_program
+        name: EFFECTIVE_DATE_FINANCIAL_PACKAGE_PROGRAM
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -646,7 +646,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: fig_client_type1
+        name: FIG_CLIENT_TYPE1
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -665,7 +665,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: fig_client_type2
+        name: FIG_CLIENT_TYPE2
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -684,7 +684,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: fig_client_type3
+        name: FIG_CLIENT_TYPE3
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -703,7 +703,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: aum_discretionary
+        name: AUM_DISCRETIONARY
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -722,7 +722,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: aum_non_discretionary
+        name: AUM_NON_DISCRETIONARY
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -741,7 +741,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: primary_investment_strategy
+        name: PRIMARY_INVESTMENT_STRATEGY
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -760,7 +760,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: investment_strategy2
+        name: INVESTMENT_STRATEGY2
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -779,7 +779,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: investment_strategy3
+        name: INVESTMENT_STRATEGY3
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -798,7 +798,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: investment_strategy4
+        name: INVESTMENT_STRATEGY4
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -817,7 +817,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: investment_strategy5
+        name: INVESTMENT_STRATEGY5
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -836,7 +836,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: investment_strategy6
+        name: INVESTMENT_STRATEGY6
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -855,7 +855,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: investment_strategy7
+        name: INVESTMENT_STRATEGY7
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -874,7 +874,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: investment_strategy_notes
+        name: INVESTMENT_STRATEGY_NOTES
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -893,7 +893,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: assets_under_management
+        name: ASSETS_UNDER_MANAGEMENT
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -912,7 +912,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: fund_structure
+        name: FUND_STRUCTURE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -931,7 +931,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: developers_flag
+        name: DEVELOPERS_FLAG
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -950,7 +950,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: single_fam
+        name: SINGLE_FAM
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -969,7 +969,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: number_of_reps
+        name: NUMBER_OF_REPS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -988,7 +988,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: assets_under_advisement
+        name: ASSETS_UNDER_ADVISEMENT
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1007,7 +1007,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: bank_assets
+        name: BANK_ASSETS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1026,7 +1026,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: non_bank_lenders
+        name: NON_BANK_LENDERS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1045,7 +1045,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: mortgage_origination
+        name: MORTGAGE_ORIGINATION
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1064,7 +1064,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: mortgage_reit_assets
+        name: MORTGAGE_REIT_ASSETS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1083,7 +1083,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: amps_merger_and_acquisitions1
+        name: AMPS_MERGER_AND_ACQUISITIONS1
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1102,7 +1102,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: amps_merger_and_acquisitions2
+        name: AMPS_MERGER_AND_ACQUISITIONS2
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1121,7 +1121,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: amps_merger_and_acquisitions3
+        name: AMPS_MERGER_AND_ACQUISITIONS3
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1140,7 +1140,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: number_of_professionals
+        name: NUMBER_OF_PROFESSIONALS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1159,7 +1159,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: privacy_reports
+        name: PRIVACY_REPORTS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1178,7 +1178,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: erisa_plan_assets
+        name: ERISA_PLAN_ASSETS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1197,7 +1197,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: private_equity_sponsor_flag
+        name: PRIVATE_EQUITY_SPONSOR_FLAG
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1216,7 +1216,7 @@ operation:
         dataType: NUMBER
         defaultValue: ""
         description: ""
-        name: employer_securities_in_plan_assets
+        name: EMPLOYER_SECURITIES_IN_PLAN_ASSETS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1235,7 +1235,7 @@ operation:
         dataType: VARCHAR
         defaultValue: ""
         description: ""
-        name: esop_flag
+        name: ESOP_FLAG
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1254,7 +1254,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_client_id
+        name: SOURCE_SYSTEM_CLIENT_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1273,7 +1273,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_policy_id
+        name: SOURCE_SYSTEM_POLICY_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1292,7 +1292,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_policy_line_id
+        name: SOURCE_SYSTEM_POLICY_LINE_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1311,7 +1311,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_policy_type_id
+        name: SOURCE_SYSTEM_POLICY_TYPE_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1330,7 +1330,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_custom_form_screen_id
+        name: SOURCE_SYSTEM_CUSTOM_FORM_SCREEN_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1349,7 +1349,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_line_type_id
+        name: SOURCE_SYSTEM_LINE_TYPE_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1368,7 +1368,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_issuing_company_id
+        name: SOURCE_SYSTEM_ISSUING_COMPANY_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1387,7 +1387,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_billing_company_id
+        name: SOURCE_SYSTEM_BILLING_COMPANY_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1406,7 +1406,7 @@ operation:
         dataType: INTEGER
         defaultValue: ""
         description: ""
-        name: source_system_original_policy_id
+        name: SOURCE_SYSTEM_ORIGINAL_POLICY_ID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -1414,7 +1414,7 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-  name: dw_client_benchmarking_client_staging
+  name: DW_CLIENT_BENCHMARKING_CLIENT_STAGING
   schema: dbo
   sqlType: Source
   type: sourceInput
