@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 597a151b-05a8-444f-b67f-94d0c151c762
-name: dw_client_benchmarking_client
+name: DW_CLIENT_BENCHMARKING_CLIENT
 operation:
   config:
     insertStrategy: INSERT
@@ -82,7 +82,7 @@ operation:
           source_system_original_policy_id = s.source_system_original_policy_id,
           dw_date_updated = CURRENT_TIMESTAMP(),
           dw_update_user = 'dbo.spdw_dw_client_benchmarking_client_insertUpdate'
-      FROM {{ ref_no_link('DBSHIFT', 'dw_client_benchmarking_client_staging') }} s
+      FROM {{ ref_no_link('DBSHIFT', 'DW_CLIENT_BENCHMARKING_CLIENT_STAGING') }} s
       WHERE s.source_system_client_id = {{ this }}.source_system_client_id
         AND s.source_system_policy_line_id = {{ this }}.source_system_policy_line_id
         AND (
@@ -169,7 +169,7 @@ operation:
       WHERE {{ this }}.dw_date_deleted IS NULL
         AND NOT EXISTS (
           SELECT 1
-          FROM {{ ref_no_link('DBSHIFT', 'dw_client_benchmarking_client_staging') }} stg
+          FROM {{ ref_no_link('DBSHIFT', 'DW_CLIENT_BENCHMARKING_CLIENT_STAGING') }} stg
           WHERE stg.source_system_client_id = {{ this }}.source_system_client_id
             AND stg.source_system_policy_line_id = {{ this }}.source_system_policy_line_id
         );
@@ -1838,10 +1838,11 @@ operation:
             WHERE d.dw_client_benchmarking_client_id IS NULL
         name: dw_client_benchmarking_client
         noLinkRefs: []
-  name: dw_client_benchmarking_client
+  name: DW_CLIENT_BENCHMARKING_CLIENT
   overrideSQL: false
   schema: dbo
   sqlType: Stage
   type: sql
   version: 1
+
 type: Node
