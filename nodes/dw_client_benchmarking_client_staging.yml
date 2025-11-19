@@ -8,25 +8,6 @@ operation:
   locationName: DBSHIFT
   metadata:
     columns:
-    - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: f69c3d3d-d7c2-4bd3-8d99-61975888b5ef
-          stepCounter: b8c63b6f-658e-419f-bd52-4919ce499a0e
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: DW_CLIENT_BENCHMARKING_CLIENT_STAGING_ID
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
       - acceptedValues:
           strictMatch: true
           values: []
@@ -1440,6 +1421,7 @@ operation:
   version: 1
 
 type: Node
+
 
 
 
