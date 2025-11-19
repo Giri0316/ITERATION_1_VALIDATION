@@ -2,7 +2,7 @@ fileVersion: 1
 id: 59f77f54-5c6a-4632-944a-3ca79a32c286
 name: dw_client_benchmarking_client_SRC
 operation:
-  database: Alliant_DW
+  database: ""
   deployEnabled: true
   description: ""
   locationName: DBSHIFT1
@@ -1434,9 +1434,10 @@ operation:
         transform: ""
         uniqueKey: false
   name: dw_client_benchmarking_client
-  schema: dbo
+  schema: ""
   sqlType: Source
   type: sourceInput
   version: 1
 
 type: Node
+
