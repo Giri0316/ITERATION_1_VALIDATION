@@ -1415,9 +1415,10 @@ operation:
         transform: ""
         uniqueKey: false
   name: dw_client_benchmarking_client_staging
-  schema: dbo
+  schema: ""
   sqlType: Source
   type: sourceInput
   version: 1
 
 type: Node
+
