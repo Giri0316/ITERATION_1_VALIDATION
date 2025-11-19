@@ -1838,7 +1838,7 @@ operation:
             WHERE d.dw_client_benchmarking_client_id IS NULL
         name: dw_client_benchmarking_client
         noLinkRefs: []
-  name: DW_CLIENT_BENCHMARKING_CLIENT_SRC
+  name: DW_CLIENT_BENCHMARKING_CLIENT
   overrideSQL: false
   schema: dbo
   sqlType: Stage
@@ -1846,4 +1846,5 @@ operation:
   version: 1
 
 type: Node
+
 
