@@ -5,7 +5,7 @@ operation:
   database: Alliant_DW
   deployEnabled: true
   description: ""
-  locationName: DBSHIFT
+  locationName: DBSHIFT1
   metadata:
     columns:
       - acceptedValues:
@@ -1438,4 +1438,5 @@ operation:
   sqlType: Source
   type: sourceInput
   version: 1
+
 type: Node
