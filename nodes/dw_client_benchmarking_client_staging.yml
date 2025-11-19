@@ -1,8 +1,8 @@
 fileVersion: 1
 id: 8b0c8e23-2856-4b95-a228-6874e50d6f46
-name: dw_client_benchmarking_client_staging
+name: DW_CLIENT_BENCHMARKING_CLIENT_STAGING
 operation:
-  database: Alliant_DW_Stage
+  database: ""
   deployEnabled: true
   description: ""
   locationName: DBSHIFT
@@ -1414,8 +1414,8 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-  name: dw_client_benchmarking_client_staging
-  schema: dbo
+  name: DW_CLIENT_BENCHMARKING_CLIENT_STAGING
+  schema: ""
   sqlType: Source
   type: sourceInput
   version: 1
