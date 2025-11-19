@@ -1433,10 +1433,11 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-  name: DW_CLIENT_BENCHMARKING_CLIENT
+  name: DW_CLIENT_BENCHMARKING_CLIENT_SRC
   schema: dbo
   sqlType: Source
   type: sourceInput
   version: 1
 
 type: Node
+
