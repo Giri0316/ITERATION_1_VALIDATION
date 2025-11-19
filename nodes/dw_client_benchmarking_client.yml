@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 597a151b-05a8-444f-b67f-94d0c151c762
-name: dw_client_benchmarking_client
+name: DW_CLIENT_BENCHMARKING_CLIENT
 operation:
   config:
     insertStrategy: INSERT
@@ -1838,10 +1838,11 @@ operation:
             WHERE d.dw_client_benchmarking_client_id IS NULL
         name: dw_client_benchmarking_client
         noLinkRefs: []
-  name: dw_client_benchmarking_client
+  name: DW_CLIENT_BENCHMARKING_CLIENT
   overrideSQL: false
   schema: dbo
   sqlType: Stage
   type: sql
   version: 1
+
 type: Node
