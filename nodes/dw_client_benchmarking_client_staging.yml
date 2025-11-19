@@ -1414,12 +1414,13 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-  name: dw_client_benchmarking_client_staging
+  name: DW_CLIENT_BENCHMARKING_CLIENT_STAGING
   schema: ""
   sqlType: Source
   type: sourceInput
   version: 1
 
 type: Node
+
 
 
