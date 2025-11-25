@@ -1,0 +1,74 @@
+fileVersion: 1
+id: 60a3ab0b-4652-4740-9e67-0c7f12e1a384
+name: EMPLOYEE_SERVICING_ROLE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: DBSHIFT
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e01a7428-c115-4680-a292-3ab7652750e3
+          stepCounter: 60a3ab0b-4652-4740-9e67-0c7f12e1a384
+        config: {}
+        dataType: BIGINT
+        defaultValue: ""
+        description: ""
+        name: EMPLOYEE_SERVICING_ROLE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ff1d530-5b80-496a-b220-43187c12579b
+          stepCounter: 60a3ab0b-4652-4740-9e67-0c7f12e1a384
+        config: {}
+        dataType: BIGINT
+        defaultValue: ""
+        description: ""
+        name: DW_CLIENT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5df450a8-3a83-4a6f-96a9-0604e0e5603e
+          stepCounter: 60a3ab0b-4652-4740-9e67-0c7f12e1a384
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: EMPLOYEE_SERVICING_ROLE_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: EMPLOYEE_SERVICING_ROLE
+  overrideSQL: false
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

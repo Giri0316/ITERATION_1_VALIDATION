@@ -1,0 +1,55 @@
+fileVersion: 1
+id: 574ef88e-c90d-4034-8b63-12b25c34e7bb
+name: DW_STRUCTURE_CURRENT
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: DBSHIFT
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e944ec7-8e6f-45a8-b63e-63851532f170
+          stepCounter: 574ef88e-c90d-4034-8b63-12b25c34e7bb
+        config: {}
+        dataType: BIGINT
+        defaultValue: ""
+        description: ""
+        name: DW_STRUCTURE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 015f6174-8898-4235-8664-5394f4c2c5c4
+          stepCounter: 574ef88e-c90d-4034-8b63-12b25c34e7bb
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: DEPARTMENT_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_STRUCTURE_CURRENT
+  overrideSQL: false
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

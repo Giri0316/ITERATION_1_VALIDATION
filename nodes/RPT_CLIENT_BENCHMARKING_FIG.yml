@@ -1,0 +1,445 @@
+fileVersion: 1
+id: 56930267-33f7-40b9-a99f-723a10e7561f
+name: RPT_CLIENT_BENCHMARKING_FIG
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DBSHIFT
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a630327f-5a1d-4050-abda-07f9c792167d
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: BIGINT
+        description: ""
+        name: DW_CLIENT_BENCHMARKING_CLIENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32230113-d02c-47df-9878-5a02e75e114d
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.DW_CLIENT_BENCHMARKING_CLIENT_ID
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e7c81d3-6331-4b19-971c-bb76f082e6fe
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: BIGINT
+        description: ""
+        name: DW_CLIENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b13c4c95-3168-45e0-84fe-19416599b4aa
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.DW_CLIENT_ID
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8251e847-a8a4-4433-a3b0-272e2129e01f
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: BIGINT
+        description: ""
+        name: DW_CLIENT_MASTER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a206b006-0d12-4217-a162-8495a86d26d8
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.DW_CLIENT_MASTER_ID
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b062957-c1d4-4c4f-889a-0538a719463b
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: BIGINT
+        description: ""
+        name: DW_DATE_ID_EFFECTIVE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 938590c6-ac0e-4ab8-a1dd-93d3b762886f
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.DW_DATE_ID_EFFECTIVE_DATE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b06c8b9-e160-4416-a4c8-2f1f6c44243a
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: BIGINT
+        description: ""
+        name: DW_DATE_ID_EXPIRATION_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d5e11cf-5d3c-47b2-b139-65005b6363c4
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.DW_DATE_ID_EXPIRATION_DATE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a2c2ac5-6e3e-46bb-9f6e-f1b53e70d47d
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: BIGINT
+        description: ""
+        name: EMPLOYEE_SERVICING_ROLE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e01a7428-c115-4680-a292-3ab7652750e3
+                stepCounter: 60a3ab0b-4652-4740-9e67-0c7f12e1a384
+            transform: esr.EMPLOYEE_SERVICING_ROLE_ID
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9345e54d-9653-488b-a320-de6708eb19d2
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CLIENT_LOOKUP_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 97f375c3-1c0b-483f-801a-8c313271702f
+                stepCounter: 56933391-9c60-4c17-9195-21d2de45b40b
+            transform: cc.LOOKUP_CODE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cff8719f-07e3-4f93-a6cd-53535921869e
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: POLICY_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 014e76c1-54c3-4d45-9831-2792672534a6
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.POLICY_NUMBER
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4dfa053-fd9a-4c22-b5e0-81f185f403e0
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: DATE
+        description: ""
+        name: POLICY_EFFECTIVE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77b9d997-8c6e-4e42-8c11-13f508a8e3d1
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.POLICY_EFFECTIVE_DATE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 588f4e69-07f8-4122-b258-3bd3737b6c7a
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: DATE
+        description: ""
+        name: POLICY_EXPIRATION_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e340785f-a49e-4734-93e1-d558a5c370fa
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.POLICY_EXPIRATION_DATE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32a76f24-2c35-4228-a3f2-1a4c9b9b5f58
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: POLICY_TYPE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b13887d1-e605-4c07-a068-0eb98a58e030
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.POLICY_TYPE_CODE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f6ffef9-4971-46ab-84a5-67c87c7bb741
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: POLICY_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f723cc5e-38ba-46e3-aa52-0f04c3e80d46
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.POLICY_TYPE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8a94b59-a5c2-40f9-a6e5-4a6c4b267ca6
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: LINE_TYPE_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb40a233-04b3-46fe-84c1-4b105d15c898
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.LINE_TYPE_CODE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7136f45-0e3f-4091-a67b-4029199a0937
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: LINE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a987820-2218-47c3-bd03-88275d319808
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.LINE_TYPE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d38a6a69-623e-461d-84ad-e61b1b11b516
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: NUMERIC(38,0)
+        description: ""
+        name: EMPLOYEE_COUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f440404-e0c2-48bd-b337-b6f790382379
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.EMPLOYEE_COUNT
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77a02796-0158-45b7-a36c-2f95c805eb34
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: NUMERIC(38,0)
+        description: ""
+        name: TOTAL_REVENUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9c9689e4-8451-4048-b40b-d249f604ec67
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.TOTAL_REVENUE
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63e031b2-132a-430b-9cde-63b715a31911
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BUSINESS_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77148a4d-3843-4613-88c2-27f9103e6717
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.FIG_CLIENT_TYPE1
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ff5e0b6-1934-406a-a226-f785b85a3f5f
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: NUMERIC(38,0)
+        description: ""
+        name: ASSETS_UNDER_MANAGEMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d1d07c0-d38a-48d6-9467-33a3036e768b
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.ASSETS_UNDER_MANAGEMENT
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ec827a5-c3c6-47a8-b570-8e100f91ab77
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: PRIMARY_INVESTMENT_STRATEGY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 72d7f8d6-72aa-4f68-96f7-c3c2f0f4eb80
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: IFNULL(cbc.PRIMARY_INVESTMENT_STRATEGY, 'Unknown')
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28f5eb6a-4933-40e8-b86a-de014a4c5770
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SOURCE_SYSTEM_CLIENT_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 97841c7b-7b02-4416-8c43-16a4b13a1a9e
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.SOURCE_SYSTEM_CLIENT_ID
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 326d2e61-a573-4530-811c-d7fd3c65c630
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SOURCE_SYSTEM_POLICY_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c7866e4-411a-4c28-984e-86d526ed5c45
+                stepCounter: 5a85c88b-21d4-4a57-8c3a-345371665a31
+            transform: cbc.SOURCE_SYSTEM_POLICY_ID
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6314f6e-4161-4606-9bd9-4e7826359f17
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: INTEGER
+        description: ""
+        name: DW_SOURCE_SYSTEM_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77f0c13e-f638-4e89-80b6-96b5278c56c2
+                stepCounter: f6e5e042-881c-43aa-a38c-859a7a0b3864
+            transform: dss.DW_SOURCE_SYSTEM_ID
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f92e5c9-9430-4e1b-94cd-6dfa61044439
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: TIMESTAMP_NTZ
+        description: ""
+        name: DW_DATE_CREATED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CURRENT_TIMESTAMP()
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 785d18d4-f655-40b1-b924-d2e82e2dd009
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: DW_CREATE_USER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: '''sprpt_client_benchmarking_fig_insert'''
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37b77ab2-d27c-4fc9-b9d9-f53eb3c2e177
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: TIMESTAMP_NTZ
+        description: ""
+        name: DW_DATE_UPDATED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CURRENT_TIMESTAMP()
+        transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f269a21-ca41-4560-936d-966952402179
+          stepCounter: 56930267-33f7-40b9-a99f-723a10e7561f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: DW_UPDATE_USER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: '''sprpt_client_benchmarking_fig_insert'''
+        transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DW_CLIENT_BENCHMARKING_CLIENT: cbc
+          DW_CLIENT_CURRENT: cc
+          DW_STRUCTURE_CURRENT: sc
+          EMPLOYEE_SERVICING_ROLE: esr
+          DW_SOURCE_SYSTEM: dss
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DBSHIFT
+            nodeName: DW_CLIENT_BENCHMARKING_CLIENT
+          - locationName: DBSHIFT
+            nodeName: DW_CLIENT_CURRENT
+          - locationName: DBSHIFT
+            nodeName: DW_STRUCTURE_CURRENT
+          - locationName: DBSHIFT
+            nodeName: EMPLOYEE_SERVICING_ROLE
+          - locationName: DBSHIFT
+            nodeName: DW_SOURCE_SYSTEM
+        join:
+          joinCondition: |
+            FROM {{ ref('DBSHIFT', 'DW_CLIENT_BENCHMARKING_CLIENT') }} "cbc"
+            INNER JOIN {{ ref('DBSHIFT', 'DW_CLIENT_CURRENT') }} "cc" ON "cbc"."DW_CLIENT_ID" = "cc"."DW_CLIENT_ID"
+            INNER JOIN {{ ref('DBSHIFT', 'DW_STRUCTURE_CURRENT') }} "sc" ON "cbc"."DW_STRUCTURE_ID" = "sc"."DW_STRUCTURE_ID"
+            LEFT OUTER JOIN {{ ref('DBSHIFT', 'EMPLOYEE_SERVICING_ROLE') }} "esr" ON "cbc"."DW_CLIENT_ID" = "esr"."DW_CLIENT_ID" AND "esr"."EMPLOYEE_SERVICING_ROLE_TYPE" = 'Client'
+            CROSS JOIN {{ ref('DBSHIFT', 'DW_SOURCE_SYSTEM') }} "dss"
+            WHERE CURRENT_DATE() BETWEEN "cbc"."POLICY_EFFECTIVE_DATE" AND IFNULL("cbc"."POLICY_EXPIRATION_DATE", '2099-12-31')
+            AND "cbc"."DW_DATE_DELETED" IS NULL
+            AND "cc"."ACTIVE_FLAG" = 'Y'
+            AND "sc"."DEPARTMENT_CODE" = '115'
+            AND "dss"."SOURCE_SYSTEM" = 'Epic'
+            AND "dss"."AGENCY_COMPANY" = 'Alliant'
+        name: RPT_CLIENT_BENCHMARKING_FIG
+        noLinkRefs: []
+  name: RPT_CLIENT_BENCHMARKING_FIG
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
