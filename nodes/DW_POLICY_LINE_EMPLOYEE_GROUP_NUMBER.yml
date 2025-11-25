@@ -1,0 +1,55 @@
+fileVersion: 1
+id: 56c4d7e9-a0f5-4e8a-8c9b-6d7e8f9a0b1c
+name: DW_POLICY_LINE_EMPLOYEE_GROUP_NUMBER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: DBSHIFT
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67d5e8f0-b1a6-4f9b-9daC-7e8f9a0b1c2d
+          stepCounter: 56c4d7e9-a0f5-4e8a-8c9b-6d7e8f9a0b1c
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: STUFF_STRING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78e6f9a1-c2b7-40ac-adbd-8f9a0b1c2d3e
+          stepCounter: 56c4d7e9-a0f5-4e8a-8c9b-6d7e8f9a0b1c
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        name: DW_POLICY_LINE_EMPLOYEE_GROUP_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_POLICY_LINE_EMPLOYEE_GROUP_NUMBER
+  overrideSQL: false
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

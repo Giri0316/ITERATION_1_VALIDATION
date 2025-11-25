@@ -1,0 +1,188 @@
+fileVersion: 1
+id: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+name: EPIC_POLICY_LINE_TYPE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: DBSHIFT
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SOURCE_SYSTEM_POLICY_LINE_TYPE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: POLICY_LINE_TYPE_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: POLICY_LINE_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: FEE_POLICY_FLAG
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: POLICY_LINE_TYPE_CLASSIFICATION_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: POLICY_LINE_TYPE_CLASSIFICATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: DW_POLICY_LINE_TYPE_CATEGORY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: TYPE_OF_BUSINESS_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e
+          stepCounter: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: TYPE_OF_BUSINESS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: EPIC_POLICY_LINE_TYPE
+  overrideSQL: false
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

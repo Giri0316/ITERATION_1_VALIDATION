@@ -1,0 +1,55 @@
+fileVersion: 1
+id: d7d6e4f3-c2b1-4a9a-8e7d-6c5b4a3d2e1f
+name: DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: DBSHIFT
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8e7f5a4-d3c2-4b0b-9f8e-7d6c5b4a3d2e
+          stepCounter: d7d6e4f3-c2b1-4a9a-8e7d-6c5b4a3d2e1f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: UNIQLINE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9f8a6b5-e4d3-4c1c-a09f-8e7d6c5b4a3d
+          stepCounter: d7d6e4f3-c2b1-4a9a-8e7d-6c5b4a3d2e1f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: STUFF_STRING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+  overrideSQL: false
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

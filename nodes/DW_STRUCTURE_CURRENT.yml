@@ -1,0 +1,112 @@
+fileVersion: 1
+id: 1f2e3d4c-5b6a-7f8e-9d0c-1b2a3f4e5d6c
+name: DW_STRUCTURE_CURRENT
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: DBSHIFT
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a3f4e5d-6c7b-8a9f-0e1d-2c3b4a5f6e7d
+          stepCounter: 1f2e3d4c-5b6a-7f8e-9d0c-1b2a3f4e5d6c
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SOURCE_SYSTEM_UNIQ_AGENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b4a5f6e-7d8c-9b0a-1f2e-3d4c5b6a7f8e
+          stepCounter: 1f2e3d4c-5b6a-7f8e-9d0c-1b2a3f4e5d6c
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SOURCE_SYSTEM_UNIQ_BRANCH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c5b6a7f-8e9d-0c1b-2a3f-4e5d6c7b8a9f
+          stepCounter: 1f2e3d4c-5b6a-7f8e-9d0c-1b2a3f4e5d6c
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SOURCE_SYSTEM_UNIQ_DEPARTMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d6c7b8a-9f0e-1d2c-3b4a-5f6e7d8c9b0a
+          stepCounter: 1f2e3d4c-5b6a-7f8e-9d0c-1b2a3f4e5d6c
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: SOURCE_SYSTEM_UNIQ_PROFIT_CENTER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e7d8c9b-0a1f-2e3d-4c5b-6a7f8e9d0c1b
+          stepCounter: 1f2e3d4c-5b6a-7f8e-9d0c-1b2a3f4e5d6c
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        name: DW_STRUCTURE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_STRUCTURE_CURRENT
+  overrideSQL: false
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

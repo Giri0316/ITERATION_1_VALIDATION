@@ -1,0 +1,69 @@
+fileVersion: 1
+id: 0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f
+name: STG_TEMP_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DBSHIFT
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a
+          stepCounter: 0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: UNIQLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8e7f5a4-d3c2-4b0b-9f8e-7d6c5b4a3d2e
+                stepCounter: d7d6e4f3-c2b1-4a9a-8e7d-6c5b4a3d2e1f
+            transform: s.UniqLine
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b
+          stepCounter: 0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: STUFF_STRING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9f8a6b5-e4d3-4c1c-a09f-8e7d6c5b4a3d
+                stepCounter: d7d6e4f3-c2b1-4a9a-8e7d-6c5b4a3d2e1f
+            transform: s.stuff_string
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING: s
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DBSHIFT
+            nodeName: DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+        join:
+          joinCondition: FROM {{ ref('DBSHIFT', 'DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING')
+            }} "s" GROUP BY s.UniqLine, s.stuff_string
+        name: STG_TEMP_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+        noLinkRefs: []
+  name: STG_TEMP_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

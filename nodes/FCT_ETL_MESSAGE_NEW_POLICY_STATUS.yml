@@ -1,0 +1,156 @@
+fileVersion: 1
+id: 5a4b3c2d-1e0f-4d7a-8b6c-9e8d7c6b5a4b
+name: FCT_ETL_MESSAGE_NEW_POLICY_STATUS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: |-
+      BEGIN
+        DROP INDEX IF EXISTS Alliant_DW_Stage.dbo.idx_dw_policy_line_staging1;
+      END
+    preSQL: "BEGIN\n  DROP INDEX IF EXISTS Alliant_DW_Stage.dbo.idx_dw_policy_line_staging1;\n\
+      \  UPDATE Alliant_DW_Stage.dbo.dw_policy_line_staging p\n  SET p.stuff_string\
+      \ = t.stuff_string\n  FROM {{ ref('DBSHIFT', 'STG_TEMP_POLICY_LINE_EMPLOYEE_GROUP_STAGING')\
+      \ }} t\n  WHERE p.UniqLine = t.UniqLine;\n\n  MERGE INTO Alliant_DW_Stage.dbo.dw_policy_line_staging\
+      \ AS ps\n  USING (\n      SELECT\n          ps_src.UniqLine,\n          eplt.policy_line_type_code,\n\
+      \          eplt.policy_line_type,\n          eplt.fee_policy_flag,\n       \
+      \   eplt.policy_line_type_classification_code,\n          eplt.policy_line_type_classification,\n\
+      \          eplt.dw_policy_line_type_category,\n          eplt.type_of_business_code,\n\
+      \          eplt.type_of_business,\n          cc.dw_client_master_id,\n      \
+      \    cc.dw_client_id,\n          p.dw_policy_id,\n          s.dw_structure_id,\n\
+      \          ci.dw_company_id AS dw_company_id_issuing,\n          cb.dw_company_id\
+      \ AS dw_company_id_billing,\n          ps_src.BillModeCode,\n          ps_src.PPETypeCode,\n\
+      \          n.dw_policy_line_employee_group_number\n      FROM Alliant_DW_Stage.dbo.dw_policy_line_staging\
+      \ AS ps_src\n      LEFT OUTER JOIN Alliant_DW.ref.epic_policy_line_type eplt\
+      \ ON eplt.source_system_policy_line_type_id = ps_src.UniqCdPolicyLineType\n\
+      \      LEFT OUTER JOIN Alliant_DW.dbo.dw_company ci ON ps_src.UniqEntityCompanyIssuing\
+      \ = ci.source_company_uniq_id AND ci.source_system = 'Epic'\n      LEFT OUTER\
+      \ JOIN Alliant_DW.dbo.dw_company cb ON ps_src.UniqEntityCompanyBilling = cb.source_company_uniq_id\
+      \ AND cb.source_system = 'Epic'\n      LEFT OUTER JOIN Alliant_DW.dbo.dw_policy_current\
+      \ p ON ps_src.UniqPolicy = p.source_system_policy_id AND p.source_system = 'Epic'\n\
+      \      LEFT OUTER JOIN alliant_dw.dbo.dw_client_current cc ON ps_src.UniqEntity\
+      \ = cc.source_system_client_id AND cc.source_system = 'Epic'\n      LEFT OUTER\
+      \ JOIN alliant_dw.dbo.dw_structure_current s ON ps_src.UniqAgency = s.source_system_uniq_agency\n\
+      \                      AND ps_src.UniqBranch = s.source_system_uniq_branch\n\
+      \                      AND ps_src.UniqDepartment = s.source_system_uniq_department\n\
+      \                      AND ps_src.UniqProfitCenter = s.source_system_uniq_profit_center\n\
+      \      LEFT OUTER JOIN Alliant_DW.dbo.dw_policy_line_employee_group_number n\
+      \ ON ps_src.stuff_string = n.stuff_string\n  ) AS src ON ps.UniqLine = src.UniqLine\n\
+      \  WHEN MATCHED THEN UPDATE SET\n      policy_line_type_code = src.policy_line_type_code,\n\
+      \      policy_line_type = src.policy_line_type,\n      fee_line_flag = src.fee_policy_flag,\n\
+      \      line_type_classification_code = src.line_type_classification_code,\n\
+      \      line_type_classification = src.line_type_classification,\n      dw_line_type_category\
+      \ = IFNULL(src.dw_policy_line_type_category, 'Unknown'),\n      line_type_of_business_code\
+      \ = src.type_of_business_code,\n      line_type_of_business = src.type_of_business,\n\
+      \      dw_client_master_id = IFNULL(src.dw_client_master_id, -1),\n      dw_client_id\
+      \ = IFNULL(src.dw_client_id, -1),\n      dw_policy_id = IFNULL(src.dw_policy_id,\
+      \ -1),\n      dw_structure_id = IFNULL(src.dw_structure_id, -1),\n      dw_company_id_issuing\
+      \ = IFNULL(src.dw_company_id_issuing, -1),\n      dw_company_id_billing = IFNULL(src.dw_company_id_billing,\
+      \ -1),\n      BillMode = CASE \n          WHEN src.BillModeCode = 'A' THEN 'Agency\
+      \ Bill'\n          WHEN src.BillModeCode = 'D' THEN 'Direct Bill'\n         \
+      \ END,\n      PPEType = CASE \n          WHEN src.PPETypeCode = 'CA' THEN 'Carrier'\n\
+      \          WHEN src.PPETypeCode = 'BR' THEN 'Broker External'\n          WHEN\
+      \ src.PPETypeCode = 'IN' THEN 'Broker Internal'\n          ELSE src.PPETypeCode\
+      \ \n          END,\n      dw_policy_line_employee_group_number = IFNULL(src.dw_policy_line_employee_group_number,\
+      \ -1),\n      dw_date_updated = CURRENT_TIMESTAMP(),\n      dw_update_user =\
+      \ 'spdw_dw_policy_line_staging_update';\n\n  CREATE INDEX idx_dw_policy_line_staging1\
+      \ ON Alliant_DW_Stage.dbo.dw_policy_line_staging (LineStatusCode);\nEND"
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DBSHIFT
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b5a4c3d-2f1e-4e8b-9c7d-0a9b8c7d6e5f
+          stepCounter: 5a4b3c2d-1e0f-4d7a-8b6c-9e8d7c6b5a4b
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: PACKAGE_EXECUTION_GUID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "'{{ parameters.ExecutionGuid }}'"
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c6b5a4d-3a2f-4f9c-ad8e-1b0c9d8e7f6a
+          stepCounter: 5a4b3c2d-1e0f-4d7a-8b6c-9e8d7c6b5a4b
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: MESSAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a
+                stepCounter: 7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d
+              - columnCounter: d4e5f6a7-b8c9-4d0e-b1f2-3b4c5d6e7f8a
+                stepCounter: a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d
+            transform: '''dw_source_system_id: '' || s.dw_source_system_id::VARCHAR
+              || '' / '' || pls.linestatuscode || '' = New Policy Line Status Code.  Check
+              dw_policy_line_status_group'''
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d7c6b5a-4b3a-40ad-be9f-2c1d0e9f8a7b
+          stepCounter: 5a4b3c2d-1e0f-4d7a-8b6c-9e8d7c6b5a4b
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: MESSAGE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: '''W'''
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e8d7c6b-5c4b-41be-cf0a-3d2e1f0a9b8c
+          stepCounter: 5a4b3c2d-1e0f-4d7a-8b6c-9e8d7c6b5a4b
+        config: {}
+        dataType: TIMESTAMP_NTZ
+        description: ""
+        name: CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CURRENT_TIMESTAMP()
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DW_POLICY_LINE_STAGING: pls
+          DW_SOURCE_SYSTEM: s
+          DW_POLICY_LINE_STATUS_GROUP: plsg
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DBSHIFT
+            nodeName: DW_POLICY_LINE_STAGING
+          - locationName: DBSHIFT
+            nodeName: DW_SOURCE_SYSTEM
+          - locationName: DBSHIFT
+            nodeName: DW_POLICY_LINE_STATUS_GROUP
+          - locationName: DBSHIFT
+            nodeName: STG_TEMP_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+        join:
+          joinCondition: FROM {{ ref('DBSHIFT', 'DW_POLICY_LINE_STAGING') }} "pls"
+            INNER JOIN {{ ref('DBSHIFT', 'DW_SOURCE_SYSTEM') }} "s" ON pls.source_system
+            = s.source_system AND s.agency_company = 'Alliant' LEFT OUTER JOIN {{
+            ref('DBSHIFT', 'DW_POLICY_LINE_STATUS_GROUP') }} "plsg" ON pls.LineStatusCode
+            = plsg.line_status_code WHERE pls.LineStatusCode IS NOT NULL AND plsg.line_status_code
+            IS NULL GROUP BY s.dw_source_system_id, pls.linestatuscode
+        name: FCT_ETL_MESSAGE_NEW_POLICY_STATUS
+        noLinkRefs: []
+  name: FCT_ETL_MESSAGE_NEW_POLICY_STATUS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
