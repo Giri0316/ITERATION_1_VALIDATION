@@ -1,0 +1,55 @@
+fileVersion: 1
+id: 5a4b3c2d-1e0f-4d7a-8b6c-9e8d7c6b5a4b
+name: CLIENT_BENCHMARKING_PROGRAM_TYPE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: DBSHIFT
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d8e9f0a-1b2c-4d3e-4f5a-6b7c8d9e0f1a
+          stepCounter: 5a4b3c2d-1e0f-4d7a-8b6c-9e8d7c6b5a4b
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: CLIENT_BENCHMARKING_PROGRAM_TYPE_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: true
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e9f0a1b-2c3d-4e4f-5a6b-7c8d9e0f1a2b
+          stepCounter: 5a4b3c2d-1e0f-4d7a-8b6c-9e8d7c6b5a4b
+        config: {}
+        dataType: VARCHAR(255)
+        defaultValue: ""
+        description: ""
+        name: PROGRAM_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: CLIENT_BENCHMARKING_PROGRAM_TYPE
+  overrideSQL: false
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
